@@ -392,6 +392,7 @@ class CityLearn(gym.Env):
         self.np_random, seed = seeding.np_random(seed)
         return [seed]
     
+    ## TODO: Check if 8760 / 12 causes problems for us, now that sequence length has changed.
     def cost(self):
         
         # Running the reference rule-based controller to find the baseline cost
